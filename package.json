@@ -1,0 +1,28 @@
+{
+  "name": "fast-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "test": "newman run ./tests/api-tests.postman.json -e ./tests/env-api-tests.postman.json",
+    "stop": "lsof -ti :3000 | xargs kill"
+  },
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "cors": "2.7.1",
+    "ejs": "2.4.1",
+    "errorhandler": "1.4.3",
+    "express": "4.13.4",
+    "method-override": "2.3.5",
+    "methods": "1.1.2",
+    "request": "2.69.0",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "author": "tlokeja",
+  "license": "ISC"
+}
